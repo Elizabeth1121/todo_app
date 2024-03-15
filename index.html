@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/todos.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <input id="task" type="text">
+    <button id="add">Add Item</button>
+    <hr>
+    <div id="todos"></div>
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- footer content here -->
+        <p>&copy; <span id="current-year"></span> Elizabeth. All rights reserved. Todays Date: <span id="current-date"></span> <br> App Created on: 3/14/24</p>
+    </footer>
+    <script src="js/todos.js"></script>
+    <script>
+        // Update current date in the footer
+        const currentDate = new Date();
+        const currentYear = currentDate.getFullYear();
+        const creationDateElement = document.getElementById("current-date");
+        creationDateElement.textContent = currentDate.toDateString();
+        const currentYearElement = document.getElementById("current-year");
+        currentYearElement.textContent = currentYear;
+    </script>
+</body>
+</html>

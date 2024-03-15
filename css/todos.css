@@ -1,0 +1,65 @@
+html
+{
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    text-align: center;
+}
+
+body 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input 
+{
+    padding: 30px;
+    width: 80%; /* Adjust as needed */
+    height: 60px;
+    font-size: 40px;
+    border: 1px solid #D3D3D3; /* Add this line */
+}
+
+input:focus
+{
+    outline: none;
+}
+
+li
+{
+    text-align: left;
+    font-size: 40px;
+    list-style: none;
+    margin: 0;
+}
+
+#todos 
+{
+    width: 50%;
+    /* additional styles as needed */
+}
+
+#task, #add 
+{
+    margin: 1em;
+}
+
+footer 
+{
+    border: 1px solid #000; /* Adjust as needed */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgrey; /* Change to desired color */
+    text-align: center;
+}
+
+.remove
+{
+    padding-bottom: 5px;
+}
